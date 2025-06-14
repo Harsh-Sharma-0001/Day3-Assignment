@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Fest Registration Form </title>
+</head>
+
+<body>
+    <form action="/" method="post">
+        <fieldset style="width: 50%;">
+            <legend> Registration Form </legend>
+            Name : <input type="text" name="name" placeholder="Enter your name..." />
+            <br />
+            <br />
+            Contact Number : <input type="tel" name="num" pattern="[0-9]{10}" />
+            <br />
+            <br />
+            E-mail : <input type="email" name="mail" id="mail" />
+            <br />
+            <br />
+            Personal Address : <textarea name="address">  </textarea>
+            <br />
+            <br />
+            Year of Study :
+            <input type="radio" value="f" name="year" /> First Year
+            <input type="radio" value="s" name="year" /> Second Year
+            <input type="radio" value="t" name="year" /> Third Year
+            <input type="radio" value="fo" name="year" /> Fourth Year
+            <br />
+            <br />
+            Course :
+            <select>
+                <option> Please select an option </option>
+                <optgroup label="Tech">
+                    <option value="b.tech"> B.Tech </option>
+                    <option value="bca"> BCA </option>
+                    <option value="i.t."> I.T. </option>
+                </optgroup>
+                <optgroup label="Non-Tech">
+                    <option value="mba"> MBA </option>
+                    <option value="bba"> BBA </option>
+                    <option value="b.com"> B.Com </option>
+                </optgroup>
+            </select>
+            <br />
+            <br />
+            Participating Event :
+            <input type="checkbox" value="dancing" name="hobbies[]" /> Dancing
+            <input type="checkbox" value="singing" name="hobbies[]" /> Singing
+            <input type="checkbox" value="painting" name="hobbies[]" /> Painting
+            <input type="checkbox" value="gaming" name="hobbies[]" /> Offline Gaming
+            <input type="checkbox" value="sports" name="hobbies[]" /> Sports
+            <br />
+            <br />
+            <input type="submit" />
+            <input type="reset" />
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
